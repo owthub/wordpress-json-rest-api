@@ -27,18 +27,8 @@ include_once 'config.php';
                                 <th>Action</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>System Architect</td>
-                                <td>This is test post</td>
-                                <td>test-post</td>
-                                <td>publish</td>
-                                <td>
-                                    <a class="btn btn-info" href="javascript:void(0)" data-toggle="modal" data-target="#postEdit">Edit</a>
-                                    <a class="btn btn-danger" href="javascript:void(0)">Delete</a>
-                                </td>
-                            </tr>
+                        <tbody id="table-data">
+                        </tbody>
                     </table>
                 </div>
             </div>
@@ -122,7 +112,7 @@ include_once 'config.php';
             </div>
         </div>
         <script>
-           var ajaxurl = "<?php echo $site_url; ?>";
+            var ajaxurl = "<?php echo $site_url; ?>";
         </script>
         <script src="./assets/js/jquery.min.js"></script>
         <script src="./assets/js/bootstrap.min.js"></script>
