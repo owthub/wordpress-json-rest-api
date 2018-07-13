@@ -45,17 +45,20 @@ include_once 'config.php';
                         <h4 class="modal-title">Edit Post</h4>
                     </div>
                     <div class="modal-body">
-                        <form class="form-horizontal" action="javascript:void(0)">
+                        <form class="form-horizontal" action="javascript:void(0)" id="frmEditPost">
+                            
+                            <input type="hidden" id="post-id" name="id"/>
+                            
                             <div class="form-group">
                                 <label class="control-label col-sm-2" for="title">Post Title:</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="title" placeholder="Enter Title">
+                                    <input type="text" class="form-control" name="title" id="title_edit" placeholder="Enter Title">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="control-label col-sm-2" for="description">Description:</label>
+                                <label class="control-label col-sm-2" for="content">Description:</label>
                                 <div class="col-sm-10">
-                                    <textarea class="form-control" name="description" id="description" placeholder="Enter description"></textarea>
+                                    <textarea class="form-control" name="content" id="description_edit" placeholder="Enter description"></textarea>
                                 </div>
                             </div>
                             <div class="form-group"> 
